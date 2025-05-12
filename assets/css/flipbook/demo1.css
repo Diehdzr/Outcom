@@ -1,0 +1,132 @@
+@font-face {
+	font-family: 'arrows';
+	src:url('../fonts/arrows/arrows.eot');
+	src:url('../fonts/arrows/arrows.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/arrows/arrows.woff') format('woff'),
+		url('../fonts/arrows/arrows.ttf') format('truetype'),
+		url('../fonts/arrows/arrows.svg#arrows') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.bb-custom-btn-next {
+	position: absolute;
+	top: 98%;
+	right: 0;
+	width: 7.5vw;
+	height: 5vh;
+	margin-top: -25px;
+	text-shadow: 0 1px 0 #fff;
+	background-color: transparent !important;
+	border: none;
+}
+
+.bb-custom-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10px;
+	background-color: rgba(0,0,0,0.05);
+}
+
+.bb-custom-btn-img {
+	width: 10px;
+	opacity: 0.5;
+}
+
+.bb-custom-btn:hover {
+	background-color: rgba(0,0,0,0.15);
+}
+
+.bb-item {
+	overflow: hidden;
+}
+
+.bb-img {
+	width: 50%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-position: center;
+	float: left;
+}
+
+.bb-custom-wrapper {
+	display: flex;
+	width: auto;
+	position: relative;
+	text-align: center;
+}
+
+.bb-custom-wrapper .bb-bookblock {
+	box-shadow: 0 12px 20px -10px rgba(81,64,49,0.6);
+}
+
+.bb-custom-wrapper h3 {
+	font-size: 1.4em;
+	font-weight: 300;
+	margin: 0.4em 0 1em;
+}
+
+.bb-custom-wrapper nav {
+	width: 100%;
+	height: 30px;
+	margin: 1em auto 0;
+	position: relative;
+	z-index: -10;
+	text-align: center;
+}
+
+.bb-custom-wrapper nav a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	border-radius: 2px;
+	background: #72b890;
+	color: #fff;
+	font-size: 0;
+	margin: 2px;
+}
+
+.bb-custom-wrapper nav a:hover {
+	opacity: 0.6;
+}
+
+.bb-custom-icon:before {
+	font-family: 'arrows';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 20px;
+	line-height: 30px;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+
+.bb-custom-icon-first:before,
+.bb-custom-icon-last:before {
+	content: "\e002";
+}
+
+.bb-custom-icon-arrow-left:before,
+.bb-custom-icon-arrow-right:before {
+	content: "\e003";
+}
+
+.bb-custom-icon-arrow-left:before,
+.bb-custom-icon-first:before {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/* No JS */
+.no-js .bb-custom-wrapper {
+	height: auto;
+}
+
+.no-js .bb-custom-content {
+	height: 470px;
+}
